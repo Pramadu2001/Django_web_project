@@ -36,11 +36,13 @@
                             Shop
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Mens</a></li>
-                            <li><a class="dropdown-item" href="#">Womens</a></li>
-                            <li><a class="dropdown-item" href="#">Kids</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category' 'MW'%}">Mens Wears</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category' 'CW'%}">Casual Wears</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category' 'FW'%}">Formal Wears</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category' 'WW'%}">Womens Wears</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category' 'KW'%}">Kids Wears</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Footwear & Accessories</a></li>
+                            <li><a class="dropdown-item" href="{% url 'category' 'AC'%}">Footwear & Accessories</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
