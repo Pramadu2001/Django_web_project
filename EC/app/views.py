@@ -15,4 +15,8 @@ class CategoryView(View):
         Product =products.objects.filter(category=val)
         title = products.objects.filter(category=val).values('title').annotate(total = Count('title'))
         return render(request,"app/category.html",locals())
-    
+
+class ProductDetails(View):
+    def get(self, request, pk):
+        product = products.objects.get(pk=pk)  # Ensure the model name starts with a lowercase 'p'
+        return render(request, "app/productdetails.html", locals())
