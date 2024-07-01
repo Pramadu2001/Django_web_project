@@ -22,14 +22,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="{% static 'app/images/brand Logo.png' %}" width="78" height="auto"></a>
+            <a class="navbar-brand" href="{% url 'home'%}"><img src="{% static 'app/images/brand Logo.png' %}" width="78" height="auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,13 +46,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Promotions</a>
+                        <a class="nav-link text-white" href="{%url 'Promotion'%}">Promotions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link text-white" href="{%url 'About'%}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
+                        <a class="nav-link text-white" href="{%url 'Contact'%}">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -81,10 +81,10 @@
                         <a href="#" class="nav-link text-white"><img src="{% static 'app/images/wishlist (1).png' %}" height="30px" ></a>
                     </li>
                     <li  class="nav-item mx-2">
-                        <button class="btn btn-outline-success" type="submit">Login</button>
+                        <a class="btn btn-outline-success" href="{% url 'Login' %}">Login</a>
                     </li>
                     <li  class="nav-item mx-2">
-                        <button class="btn btn-outline-success" type="submit">Register</button>
+                        <a class="btn btn-outline-success" href="{% url 'customerregistration' %}">Register</a>
                     </li>
                 </ul>
             </div>

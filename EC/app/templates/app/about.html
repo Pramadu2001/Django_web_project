@@ -1,0 +1,45 @@
+{% extends 'app/index.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block main-content %}
+
+{% block banner-slider %}
+  <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+    <swiper-slide><img src="{% static 'app/images/Brand Logo.png' %}" alt="Brand Logo"></swiper-slide>
+    <swiper-slide>Slide 2</swiper-slide>
+    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide>Slide 4</swiper-slide>
+    <swiper-slide>Slide 5</swiper-slide>
+    <swiper-slide>Slide 7</swiper-slide>
+    <swiper-slide>Slide 8</swiper-slide>
+    <swiper-slide>Slide 9</swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+{% endblock banner-slider %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center"> 
+            Welcome to PAUC, your number one source for the best and most affordable products. We're dedicated to providing you with the highest quality items, focusing on reliability, customer service, and uniqueness.
+            Founded in 2023, PAUC has come a long way from its beginnings in a small office. When we first started out, our passion for offering products that bring joy and convenience to our customers drove us to start our own business. 
+
+        </p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Our Mission</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center"> 
+            At PAUC, our mission is to bring joy and convenience to our customers' lives by providing high-quality, affordable products. We are dedicated to maintaining rigorous standards of excellence in every product we offer, ensuring that our customers receive only the best. Our focus on exceptional customer service means that every interaction with PAUC is positive, responsive, and caring. We are also committed to sustainability, promoting eco-friendly practices and products that contribute to a healthier planet.
+
+        </p>
+    </div>
+</div>
+
+<br><br>
+{% endblock main-content %}
